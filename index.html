@@ -2,13 +2,14 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <!-- Baris di bawah ini WAJIB ada agar tampilan rapi dan tidak kecil di HP -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Task - I Gede Budi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER BARU DI BAGIAN ATAS -->
+    <!-- Bar navigasi atas dengan nama pembuat -->
     <header class="top-bar">
         <div class="header-left">
             <span>🌟 Hello, Productivity Seeker!</span>
@@ -24,15 +25,14 @@
         <span>⚡ Tetap Konsisten</span>
     </div>
 
+    <!-- Kotak Utama Aplikasi -->
     <div class="container">
         <h1>📝 Daily Task Tracker</h1>
-        
         <div class="input-card">
             <input type="text" id="inputKegiatan" placeholder="Apa rencana harianmu?">
             <input type="date" id="inputTanggal">
             <button onclick="tambahKegiatan()" class="btn-simpan">Simpan</button>
         </div>
-
         <ul id="daftarKegiatan"></ul>
 
         <hr>
@@ -54,6 +54,7 @@
         <span>🚀 Menuju Sukses</span>
     </div>
 
+    <!-- Menghubungkan ke logika JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
