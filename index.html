@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task - I Gede Budi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER BARU DI BAGIAN ATAS -->
+    <header class="top-bar">
+        <div class="header-left">
+            <span>🌟 Hello, Productivity Seeker!</span>
+        </div>
+        <div class="header-right">
+            <span>Developed by <strong>I Gede Budi</strong></span>
+        </div>
+    </header>
+
+    <!-- Motivasi Sisi Kiri -->
+    <div class="quote-container quote-left">
+        <p>"Disiplin adalah jembatan antara tujuan dan pencapaian."</p>
+        <span>⚡ Tetap Konsisten</span>
+    </div>
+
+    <div class="container">
+        <h1>📝 Daily Task Tracker</h1>
+        
+        <div class="input-card">
+            <input type="text" id="inputKegiatan" placeholder="Apa rencana harianmu?">
+            <input type="date" id="inputTanggal">
+            <button onclick="tambahKegiatan()" class="btn-simpan">Simpan</button>
+        </div>
+
+        <ul id="daftarKegiatan"></ul>
+
+        <hr>
+
+        <div class="long-term-section">
+            <h2>🎯 Rencana Inti & Target Besar</h2>
+            <div class="input-card">
+                <input type="text" id="inputInti" placeholder="Tulis target besarmu...">
+                <input type="date" id="inputTglInti">
+                <button onclick="tambahInti()" class="btn-inti">Simpan Target</button>
+            </div>
+            <ul id="daftarInti"></ul>
+        </div>
+    </div>
+
+    <!-- Motivasi Sisi Kanan -->
+    <div class="quote-container quote-right">
+        <p>"Keberhasilan bukan milik mereka yang pintar, tapi milik mereka yang terus mencoba."</p>
+        <span>🚀 Menuju Sukses</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
